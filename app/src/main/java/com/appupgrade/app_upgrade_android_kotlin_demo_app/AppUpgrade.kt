@@ -7,6 +7,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.util.Log
+import android.widget.Button
 import okhttp3.*
 import org.json.JSONObject
 import java.io.IOException
@@ -94,14 +95,15 @@ class AppUpgrade {
                 builder.setMessage(updateMessage)
                 builder.setCancelable(false)
 
-                builder.setPositiveButton("Update Now",
-                    DialogInterface.OnClickListener { dialog: DialogInterface, which: Int ->
-                        onUserUpdate(parentActivity)
-                        // If user click Later then dialog box is canceled.
-                        dialog.cancel()
-                    } as DialogInterface.OnClickListener)
+                builder.setPositiveButton("Update Now", null)
 
                 val alert = builder.create()
+
+                alert.setOnShowListener {
+                    val b: Button = alert.getButton(android.app.AlertDialog.BUTTON_POSITIVE)
+                    b.setOnClickListener { onUserUpdate(parentActivity) }
+                }
+
                 alert.setTitle("Please Update")
                 alert.show()
             }
