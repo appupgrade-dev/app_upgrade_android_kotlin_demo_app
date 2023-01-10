@@ -1,8 +1,8 @@
 # App Upgrade: Android Kotlin Demo App
 
-[App Upgrade: Android Kotlin Demo App](https://github.com/appupgrade-dev/app_upgrade_android_kotlin_demo_app) is a sample android app written in Kotlin integrated with App Upgrade API to demonstrate how Force upgrade works in android app with [App Upgrade](https://appupgrade.dev).
+[App Upgrade: Android Kotlin Demo App](https://github.com/appupgrade-dev/app_upgrade_android_kotlin_demo_app) is a sample android app written in Kotlin integrated with [App Upgrade Android SDK](https://github.com/appupgrade-dev/app-upgrade-android-sdk) to demonstrate how Force upgrade works in android app with [App Upgrade](https://appupgrade.dev).
 
-You can find the android kotlin demo app integrated via Android SDK in [main](https://github.com/appupgrade-dev/app_upgrade_android_kotlin_demo_app) branch.
+You can find the android kotlin demo app integrated via API in [integrate-via-api](https://github.com/appupgrade-dev/app_upgrade_android_kotlin_demo_app/tree/integrate-via-api) branch.
 
 You can find Java version [here](https://github.com/appupgrade-dev/app_upgrade_android_java_demo_app)
 
@@ -16,16 +16,16 @@ To get started, clone the repo:
 
 1. Open the directory in Andriod Studio.
 
-2. Open the `app_upgrade_android_kotlin_demo_app\app\src\main\java\com\appupgrade\app_upgrade_android_kotlin_demo_app\AppUpgrade.kt` file, and replace required values in line 21-28
+2. Open the `app_upgrade_android_kotlin_demo_app\app\src\main\java\com\appupgrade\app_upgrade_android_kotlin_demo_app\MainActivity.kt` file, and replace required values in line 16-23
    | Key                   | Value Description |
    | -----------------------|-------------|
    | `xApiKey`     | Your API Key. Required. |
    | `appName`  | Your app name. Required. |
    | `appVersion`  | Your app version. Required. |
    | `platform`  | Your app platform, ex: android or iOS. Required. |
-   | `environment`  | Your app enviroment, ex: dev, stating, production. Required. |
+   | `environment`  | Your app environment, ex: dev, stating, production. Required. |
 
-2. Save `AppUpgrade.kt` file.
+2. Save `MainActivity.kt` file.
 
 3. Run the app.
 
