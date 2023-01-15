@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
             appName = "Wallpaper app",
             appVersion = "1.0.0",
             platform = "android",
-            environment = "production"
+            environment = "production",
+            appLanguage = "es" //Optional. Your app language code.
         )
 
         appUpgrade = AppUpgrade()
