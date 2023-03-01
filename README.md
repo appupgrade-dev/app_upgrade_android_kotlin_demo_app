@@ -25,6 +25,16 @@ To get started, clone the repo:
    | `platform`  | Your app platform, ex: android or iOS. Required. |
    | `environment`  | Your app environment, ex: dev, stating, production. Required. |
    | `appLanguage`  | Your app language code, ex: en, es. Optional. |
+   | `preferredAndroidMarket`  | Your preferred android market, ex: amazon, huawei or other. Optional. |
+   | `otherAndroidMarketUrl`  | Other market place url from where update can be done. Optional. Required only if PreferredAndroidMarket is other |
+
+If you want users to redirect to store other than app store or playstore. You can add these additional parameters in appInfo
+
+- preferredAndroidMarket: PreferredAndroidMarket.amazon // or PreferredAndroidMarket.huawei or PreferredAndroidMarket.other If not provided default is Google playstore.
+  If you want to redirect user to some other android market place you can add the following fields:
+
+- preferredAndroidMarket: PreferredAndroidMarket.other
+- otherAndroidMarketUrl: 'https://someotherandroidmarket.com/app/id'// Required if preferredAndroidMarket is other.   
 
 2. Save `MainActivity.kt` file.
 
