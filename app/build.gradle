@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.appupgrade-dev:app-upgrade-android-sdk:1.0.4'
+    implementation 'com.github.appupgrade-dev:app-upgrade-android-sdk:1.0.5'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'

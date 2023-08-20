@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
             appLanguage = "es", //Optional. Your app language code.
             // preferredAndroidMarket = PreferredAndroidMarket.HUAWEI, // or PreferredAndroidMarket.AMAZON or PreferredAndroidMarket.OTHER If not provided default is Google playstore. Optional
             // otherAndroidMarketUrl = "https://otherandroidmarketurl.com/app/id" // Required if preferredAndroidMarket is OTHER.
+            // customAttributes = mapOf(
+            //    "os" to 12,
+            //    "country" to "IN",
+            //    "build" to 100
+            // )
         )
 
         appUpgrade = AppUpgrade()
