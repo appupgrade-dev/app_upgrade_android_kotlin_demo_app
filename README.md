@@ -30,10 +30,10 @@ To get started, clone the repo:
 
 If you want users to redirect to store other than app store or playstore. You can add these additional parameters in appInfo
 
-- preferredAndroidMarket: PreferredAndroidMarket.amazon // or PreferredAndroidMarket.huawei or PreferredAndroidMarket.other If not provided default is Google playstore.
+- preferredAndroidMarket: PreferredAndroidMarket.HUAWEI // or PreferredAndroidMarket.AMAZON or PreferredAndroidMarket.OTHER If not provided default is Google playstore.
   If you want to redirect user to some other android market place you can add the following fields:
 
-- preferredAndroidMarket: PreferredAndroidMarket.other
+- preferredAndroidMarket: PreferredAndroidMarket.OTHER
 - otherAndroidMarketUrl: 'https://someotherandroidmarket.com/app/id'// Required if preferredAndroidMarket is other.   
 
 2. Save `MainActivity.kt` file.
@@ -56,4 +56,4 @@ If you want users to redirect to store other than app store or playstore. You ca
 ## Need help?
 
 If you're looking for help, try our [Documentation](https://appupgrade.dev/docs/) or our [FAQ](https://appupgrade.dev/docs/app-upgrade-faq).
-If you need support please write to us at appupgrade.dev@gmail.com
+If you need support please write to us at support@appupgrade.dev
