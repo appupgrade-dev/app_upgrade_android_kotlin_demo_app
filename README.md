@@ -50,6 +50,14 @@ If you want users to redirect to store other than app store or playstore. You ca
 6. Edit the version in dashboard with Force upgrade field unselected. Refresh the app and you will see a popup with soft upgrade with a button to upgrade later.
  > For full details on how to use App Upgrade dashboard read our [Documentation](https://appupgrade.dev/docs)
 
+## Troubleshoot
+If you are using `minifyEnabled true` it may obfuscate the code. Add the following rule in proguard-rules.pro to make sure SDK shows the popup.
+```
+# Keep all classes in the App Upgrade SDK package
+-keep class com.appupgrade.app_upgrade_android_sdk.** { *; }
+
+```
+
 ## Screenshots
  ![forceupgrade_android_kotlin](https://raw.githubusercontent.com/appupgrade-dev/app-upgrade-assets/main/images/forceupgrade_android_kotlin.png)
 

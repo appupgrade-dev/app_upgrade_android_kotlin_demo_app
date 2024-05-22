@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Keep all classes in the App Upgrade SDK package
+-keep class com.appupgrade.app_upgrade_android_sdk.** { *; }

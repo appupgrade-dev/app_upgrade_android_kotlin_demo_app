@@ -14,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val xApiKey = "ZWY0ZDhjYjgtYThmMC00NTg5LWI0NmUtMjM5OWZkNjkzMzQ5"
+        val xApiKey = "YTA4MTQ3ZTMtNDFjMy00ZjQxLTg4MWYtYWY1OWNhYjQ5YzBh"
 
         val appInfo = AppInfo(
-            appId = "com.snapdeal.main",
+            appId = "com.android.chrome",
             appName = "Wallpaper app",
             appVersion = "1.0.0",
             platform = "android",
